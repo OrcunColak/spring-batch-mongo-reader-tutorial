@@ -1,0 +1,19 @@
+spring:
+
+  #disabled job run at startup
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: never
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: <<database_name>>
+      username: <<database_username>>
+      password: <<database_password>>
+      auto-index-creation: false
+
+
+
